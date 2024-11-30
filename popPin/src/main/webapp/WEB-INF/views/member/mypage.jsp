@@ -32,7 +32,7 @@ function removeLike(storeId) {
 <body>
     <%@ include file="../includes/header.jsp"%>
     <div class="myInfoContainer">
-        <img src="Img/maple-leaf.jpg" alt="" id="proImg">
+        <img src="../resources/img/jimin.png" alt="" id="proImg">
         <div class="myInfoText">
             <h2 id="userName">${user.username}</h2>
             <p>닉네임: &emsp;${user.nickname}</p>
@@ -40,7 +40,10 @@ function removeLike(storeId) {
             <button class="loginBtn" id="editBtn" onclick="window.location.href='/member/edit'">내 정보 수정</button>
         </div>
     </div>
-    <h2 style="text-align:center">관심 팝업스토어 목록</h2>
+    <div>
+    <h2 style="text-align:center; display:inline-block;">관심 팝업스토어 목록</h2>
+    <h2 style="text-align:center; display:inline-block;">신청 팝업스토어 목록</h2>
+    </div>
     <div class="cardContainer">
         <c:forEach items="${likedStores}" var="store">
             <div class="card" id="card-${store.storeId}">
