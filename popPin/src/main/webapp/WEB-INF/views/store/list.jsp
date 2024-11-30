@@ -47,8 +47,6 @@ function toggleLike(storeId, button) {
 }
 
 
-
-
 </script>
 </head>
 <body>
